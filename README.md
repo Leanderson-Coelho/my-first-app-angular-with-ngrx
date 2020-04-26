@@ -1,4 +1,4 @@
-# MyFirstAppNgrx
+# My First App Angular With Ngrx
 
 Repository for learn about [reactive state](https://ngrx.io/) in angular 
 
