@@ -1,6 +1,6 @@
 import { Film } from '../model/film';
 import { createReducer, on, Action } from '@ngrx/store';
-import { loadFilms, loadedFilms } from '../actions/films-page.actions';
+import { loadedFilms } from '../actions/films-api.action';
 
 export const keyFilms = 'films';
 

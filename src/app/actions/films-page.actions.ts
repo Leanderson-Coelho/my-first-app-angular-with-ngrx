@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { Film } from '../model/film';
+
+// aqui ficariam outras actions referente ao componente (ou componentes) que manipulam `film` 
 
 export const loadFilms = createAction('[Films Component] Load Films');
-export const loadedFilms = createAction('[Films API] Films Loaded Success', props<{films: Film[]}>());
