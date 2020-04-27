@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Film } from '../model/film';
 import { Store, select } from '@ngrx/store';
 import { loadFilms } from '../actions/films-page.actions';
+import { selectRecentFilms, selectFilms } from './../selectors/film-select';
 
 @Component({
   selector: 'app-films',
@@ -20,7 +21,7 @@ export class FilmsComponent implements OnInit {
 
   ngOnInit() {
     this.store.dispatch(loadFilms());
-    this.films$ = this.store.pipe(select('films'));
+    this.films$ = this.store.pipe(select(selectRecentFilms));
 
   }
 

@@ -1,14 +1,10 @@
-import { Film } from '../model/film';
 import { createReducer, on, Action } from '@ngrx/store';
 import { loadedFilms } from '../actions/films-api.action';
+import { State } from './applicationState';
 
 // responsável por atualizar o state da aplicação de acordo com cada actions 
 
 export const keyFilms = 'films';
-
-export interface State {
-    films: Film[];
-}
 
 export const initialState: State = {
     films: new Array()
