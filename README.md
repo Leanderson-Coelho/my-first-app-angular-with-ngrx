@@ -1,4 +1,6 @@
-# MyFirstAppNgrx
+# My First App Angular With Ngrx
+
+Repository for learn about [reactive state](https://ngrx.io/) in angular 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
