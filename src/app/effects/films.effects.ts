@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import { EMPTY, Observable } from 'rxjs';
 import { map, mergeMap, catchError, switchMap } from 'rxjs/operators';
 import { createEffect, Actions, ofType } from '@ngrx/effects';
-import * as FilmsActions from './films.actions';
+import * as FilmsActions from '../actions/films-page.actions';
 import { Action } from '@ngrx/store';
 
 // [Films Component] Load Films

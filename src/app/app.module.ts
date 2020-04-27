@@ -8,8 +8,8 @@ import { FilmsComponent } from './films/films.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
-import * as fromFilms from './films/films.reducer';
-import { FilmsEffect } from './films/films.effects';
+import * as fromFilms from './reducers/films.reducer';
+import { FilmsEffect } from './effects/films.effects';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 

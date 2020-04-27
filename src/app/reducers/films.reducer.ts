@@ -1,6 +1,6 @@
-import { Film } from './../model/film';
+import { Film } from '../model/film';
 import { createReducer, on, Action } from '@ngrx/store';
-import { loadFilms, loadedFilms } from './films.actions';
+import { loadFilms, loadedFilms } from '../actions/films-page.actions';
 
 export const keyFilms = 'films';
 

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Film } from '../model/film';
 import { Store, select } from '@ngrx/store';
-import { loadFilms } from './films.actions';
+import { loadFilms } from '../actions/films-page.actions';
 
 @Component({
   selector: 'app-films',
