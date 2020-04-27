@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
 import { EMPTY, Observable } from 'rxjs';
 import { map, mergeMap, catchError, switchMap } from 'rxjs/operators';
 import { createEffect, Actions, ofType } from '@ngrx/effects';
-import * as FilmsActions from '../actions/films-page.actions';
+import { loadedFilms } from '../actions/films-api.action';
+import { loadFilms } from '../actions/films-page.actions';
 import { Action } from '@ngrx/store';
 
 // [Films Component] Load Films
@@ -13,14 +14,15 @@ import { Action } from '@ngrx/store';
 @Injectable()
 export class FilmsEffect {
 
+    // responsável por comunicações externas a aplicação
 
     loadMovies$: Observable<Action> = createEffect(() => 
         this.actions$.pipe(
-            ofType(FilmsActions.loadFilms),
+            ofType(loadFilms),
             mergeMap(() => this.films.getAll().pipe(
                 map((data: Film[]) => {
                     console.log('carregando filmes', data);
-                    return FilmsActions.loadedFilms({films: data});
+                    return loadedFilms({films: data});
                 })
             )),
             catchError(() => EMPTY)

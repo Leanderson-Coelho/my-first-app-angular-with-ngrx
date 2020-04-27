@@ -2,6 +2,8 @@ import { Film } from '../model/film';
 import { createReducer, on, Action } from '@ngrx/store';
 import { loadedFilms } from '../actions/films-api.action';
 
+// responsável por atualizar o state da aplicação de acordo com cada actions 
+
 export const keyFilms = 'films';
 
 export interface State {
