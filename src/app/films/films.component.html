@@ -1,6 +1,9 @@
 <p>
   films works!
 </p>
+<div *ngFor="let film of films$ | async">
+  <p>{{ film.title }}</p>
+</div>
 
 <button [routerLink]="['/home']" >Home</button>
 

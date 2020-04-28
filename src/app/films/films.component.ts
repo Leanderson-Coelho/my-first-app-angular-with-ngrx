@@ -22,7 +22,6 @@ export class FilmsComponent implements OnInit {
   ngOnInit() {
     this.store.dispatch(loadFilms());
     this.films$ = this.store.pipe(select(selectRecentFilms));
-
   }
 
 }

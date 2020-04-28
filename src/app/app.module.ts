@@ -12,6 +12,7 @@ import * as fromFilms from './reducers/films.reducer';
 import { FilmsEffect } from './effects/films.effects';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
