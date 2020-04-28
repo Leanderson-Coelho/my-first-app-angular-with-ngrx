@@ -26,7 +26,7 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    StoreModule.forRoot({'films': fromFilms.reducer}),
+    StoreModule.forRoot({'state': fromFilms.reducer}),
     StoreDevtoolsModule.instrument(),
     EffectsModule.forRoot([FilmsEffect]),
   ],

@@ -1,10 +1,10 @@
 import { createSelector, createFeatureSelector } from '@ngrx/store';
 import { State } from './../reducers/applicationState';
 
-export const selectFilms = createFeatureSelector<State>('films');
+export const selectRootState = createFeatureSelector<State>('state');
 
 export const selectRecentFilms = createSelector(
-    selectFilms,
+    selectRootState,
     state => {
         return state.films.filter(f => {
             console.log(Number(f.release_date) > 2010);
